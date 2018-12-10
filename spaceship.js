@@ -13,8 +13,8 @@ class spaceShip{
 	}
 
 	backward(){
-		this.vel.x += Math.cos((this.direction*Math.PI*2)/360);
-		this.vel.y += Math.sin((this.direction*Math.PI*2)/360);
+		//this.vel.x += Math.cos((this.direction*Math.PI*2)/360);
+		//this.vel.y += Math.sin((this.direction*Math.PI*2)/360);
 	}
 
 	right(){

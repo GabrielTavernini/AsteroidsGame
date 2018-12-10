@@ -1,12 +1,12 @@
 var ship;
-var asteroidsN = 15;
+var asteroidsN = 10;
 var asteroids = [];
 var projectiles = [];
 
 var gameOver = false;
 
 function setup() {
-	createCanvas(windowWidth - 100, windowHeight - 100);
+	createCanvas(windowWidth - 15, windowHeight - 15);
 	ship = new spaceShip();
 
 	for(let j = 0; j < asteroidsN; j++){
