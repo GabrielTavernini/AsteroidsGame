@@ -6,7 +6,7 @@ var projectiles = [];
 var gameOver = false;
 
 function setup() {
-	createCanvas(windowWidth - 15, windowHeight - 15);
+	createCanvas(windowWidth - 20, windowHeight - 20);
 	ship = new spaceShip();
 
 	for(let j = 0; j < asteroidsN; j++){
