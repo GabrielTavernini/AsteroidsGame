@@ -3,10 +3,16 @@ class asteroid{
 		this.vel = p5.Vector.random2D();
 		this.vertexN = random(8,15);
 
-		if(pos)
+		if(pos) {
 			this.pos = pos.copy();
-		else
+    } else {
 			this.pos = createVector(random(0, width), random(0, height));
+      while(dist(this.pos.x, this.pos.y, width/2, height/2) < 100){
+				this.pos.mult(2);
+				this.pos.x %= width;
+				this.pos.y %= height;
+			}
+    }
 
 		if(radius)
 			this.radius = radius;
